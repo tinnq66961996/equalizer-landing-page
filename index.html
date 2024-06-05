@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Frontend Mentor | Equalizer landing page</title>
+  </head>
+  <body class="font-main">
+    <div
+      class="container flex flex-col gap-[5rem] mobile:px-[2.5rem] mobile:py-[4rem] tablet:px-[3.6rem] h-screen desktop:px-[10rem] desktop:gap-[15rem]"
+    >
+      <div class="background absolute top-[-20rem] right-[-20rem]">
+        <img
+          src="starter-code/assets/bg-main-desktop.png"
+          alt="background desktop"
+          class="hidden desktop:block w-screen h-screen"
+        />
+        <img
+          src="starter-code/assets/bg-main-tablet.png"
+          alt="background tablet"
+          class="hidden tablet:block w-screen h-screen"
+        />
+        <img
+          src="starter-code/assets/bg-main-mobile.png"
+          alt="background mobile"
+          class="h-screen w-screen hidden mobile:block"
+        />
+      </div>
+      <img
+        src="starter-code/assets/logo.svg"
+        alt="logo"
+        class="w-[14.6rem] h-[3.2rem]"
+      />
+      <img
+        src="starter-code/assets/bg-pattern-1.svg"
+        alt="pattern 1"
+        class="h-[40rem] w-[26.7rem] absolute top-[-3rem] right-[-4rem] hidden tablet:block"
+      />
+      <section class="introduction flex flex-col text-[#191826] gap-[2rem]">
+        <h1
+          class="text-[4rem] font-bold tablet:text-[6.4rem] tablet:w-[52rem] leading-none desktop:text-[8.8rem] desktop:w-[101.5rem]"
+        >
+          We make your music sound extraordinary.
+        </h1>
+        <p
+          class="text-[1.6rem] tablet:text-[1.8rem] desktop:text-[2rem] tablet:w-[51.4rem] desktop:w-[82.5rem]"
+        >
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </section>
+      <section
+        class="content flex flex-col w-[37.5rem] -mx-[2.5rem] tablet:mx-0 relative mt-[10rem] desktop:mt-[20rem]"
+      >
+        <img
+          src="starter-code/assets/illustration-app.png"
+          alt="phone picture"
+          class="w-[21rem] h-[43rem] absolute self-center top-[-10rem] tablet:w-[27rem] tablet:h-[55.6rem] desktop:right-[-7rem] desktop:top-[-15rem]"
+        />
+        <div
+          class="pattern bg-black w-full h-[70.8rem] flex flex-col items-center rounded-[1.2rem] tablet:w-[69.6rem] tablet:h-[60rem] desktop:w-[111rem]"
+        >
+          <img
+            src="starter-code/assets/bg-pattern-2.svg"
+            alt="pattern 1"
+            class="w-[28rem] h-[42rem]"
+          />
+        </div>
+        <div
+          class="information bg-[#FA7453] rounded-[1.2rem] h-[54.6rem] flex flex-col absolute top-[40rem] px-[3rem] py-[4rem] gap-[2rem] tablet:w-[40rem] tablet:top-[20rem] tablet:left-[22.75rem] desktop:w-[44.6rem] desktop:h-[62.5rem] desktop:top-[10rem] desktop:left-[60rem]"
+        >
+          <h3
+            class="font-bold text-[#FCFAF9] text-[3.2rem] desktop:text-[4rem]"
+          >
+            Premium EQ
+          </h3>
+          <p
+            class="text-[#fcfaf9] text-[1.8rem] desktop:text-[2rem] desktop:w-[33.3rem]"
+          >
+            Get expert-level control with a robust equalizer, volume mixer, and
+            spatial audio. Take your listening experience to a whole new level
+            and access all our incredible features!
+          </p>
+          <div class="price flex gap-[1.6rem] items-center px-[1rem]">
+            <p class="text-[#fcfaf9] font-bold text-[6.5rem]">$4</p>
+            <p class="text-[#fcfaf9] font-normal text-[2rem]">/ month</p>
+          </div>
+          <div class="buttons flex flex-col gap-[1.5rem] px-[1rem]">
+            <button
+              class="IOS btn flex justify-center h-[6.1rem] w-[29.6rem] items-center gap-[0.8rem] text-[1.8rem] font-bold bg-black text-[#fcfaf9] rounded-[1.2rem] desktop:w-[33.3rem] hover:bg-[#66E2DC] hover:text-[#FCFAF9]"
+            >
+              <img
+                src="starter-code/assets/icon-apple.svg"
+                alt="ios icon"
+                class="h-[2rem]"
+              />IOS download
+            </button>
+            <button
+              class="Android btn flex justify-center h-[6.1rem] w-[29.6rem] items-center gap-[0.8rem] text-[1.8rem] font-bold bg-white text-[#191826] rounded-[1.2rem] desktop:w-[33.3rem] hover:bg-[#FFB964]"
+            >
+              <img
+                src="starter-code/assets/icon-android.svg"
+                alt="Android icon"
+              />Android Download
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer flex flex-col gap-[3.2rem] mt-[22rem]">
+        <img
+          src="starter-code/assets/logo.svg"
+          alt="logo"
+          class="w-[14.7rem] h-[3.2rem]"
+        />
+        <div
+          class="flex flex-col gap-[6.4rem] tablet:flex-row tablet:place-items-center tablet:justify-between"
+        >
+          <p
+            class="text-[1.6rem] text-[#191826] font-normal tablet:w-[36.6rem]"
+          >
+            All rights reserved © Equalizer 2021 Have any problems? Contact us
+            via social media or email us at <br class="hidden" />
+            <strong>cequalizer@example.com</strong>
+          </p>
+          <div class="icons flex gap-[2rem]">
+            <img
+              src="starter-code/assets/icon-facebook.svg"
+              alt="facebook icon"
+              class="w-[2rem] h-[2rem]"
+            />
+            <img
+              src="starter-code/assets/icon-instagram.svg"
+              alt="instagram icon"
+              class="w-[2rem] h-[2rem]"
+            />
+            <img
+              src="starter-code/assets/icon-twitter.svg"
+              alt="twitter icon"
+              class="w-[2rem] h-[2rem]"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
